@@ -1,19 +1,12 @@
 import streamlit as st
 import pandas as pd
-import streamlit as st
 from streamlit_option_menu import option_menu
-import sys
-from io import StringIO
 import re
-import cv2
 from PIL import Image
-
 from sklearn.datasets import fetch_openml
 from sklearn.model_selection import train_test_split
 import numpy as np
 import matplotlib.pyplot as plt
-import torch
-import torchvision
 import torch
 from torch import nn
 import torch.nn.functional as F
