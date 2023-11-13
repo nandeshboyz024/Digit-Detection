@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 from streamlit_option_menu import option_menu
+import sys
 import re
 from PIL import Image
 from sklearn.datasets import fetch_openml
