@@ -50,7 +50,7 @@ def visualize_data(X, y,n):
     #plt.show()  # Display the entire grid
 
 # Loading Data
-#@st.cache_data
+@st.cache_data
 def load_model(model_name):
     mnist = fetch_openml(model_name, as_frame=False, cache=False)
     return mnist
