@@ -50,7 +50,7 @@ def visualize_data(X, y,n):
     #plt.show()  # Display the entire grid
 
 # Loading Data
-@st.cache_data
+#@st.cache_data
 def load_model(model_name):
     mnist = fetch_openml(model_name, as_frame=False, cache=False)
     return mnist
@@ -270,8 +270,9 @@ elif selected2=="Model":
     st.markdown("""
                 <h1 style='text-align: center;'>Build Your Own Model</h1>
     """,True)
-    st.markdown("""
-                Building your own model is like training your magical friend to recognize hand-written numbers. You show it lots of examples, and it learns to guess the right number when you draw something new. It's like having a drawing detective friend!:sunglasses: """,True)
+    st.markdown(""" 
+                Building your own model is like training your magical friend to recognize hand-written numbers. You show it lots of examples, and it learns to guess the right number when you draw something new. It's like having a drawing detective friend!:sunglasses: 
+    """,True)
     st.markdown("""
                 <h2>Design a Neural Network</h2>
                 <p align="justify" >Your friend first looks at your drawing, which is a picture made up of tiny dots, just like the pixels on your computer screen. Your friend has such a brain where are hidden helpers (neurons) that work together. Each helper is like a detective looking for specific things in your drawing, like curves, lines or corners. Before becoming a super smart friend, it needs some training. You show it many drawings of numbers. and each time, it adjusts its helpers to get better at recognizing patterns. Now, when you draw a new number, it's helpers quickly analyze the drawing and vote on what they think it is. The most votes decide what your friend predicts! If your friend makes a correct prediction, it cheers, "Yay, I got it right!" If not, It learns from the mistake so it can do better next time.</p>
@@ -289,15 +290,6 @@ else:
             <p align="justify" >Imagine the computer is like a super smart friend with special eyes that can look at pictures. But this friend does not know what things are, like cats or dogs. So, you get to teach them! <br> you show your friend lots of pictures and say, "Look, this is a cat and this is a dog." The computer learns what makes a cat look like a cat and what make a dog like a dog based on ears, tails, and fur patterns. Now, when you show the computer a new picture, it tries to decide if it is a cat or dog based on what it learned.</p>
     """,True)
     st.image("data//intro.png")
-    
-
-
-
-
-
-
-
-
 
 # # # Build Neural Network with PyTorch
 # import torch
