@@ -1,1 +1,1 @@
-# winter_project
+# Digit Detection
